@@ -21,6 +21,9 @@ function fetchGraphQL(
 ) {
   return fetch(endpoint, {
     method: 'POST',
+    headers:{
+      'x-hasura-admin-secret' : import.meta.env.VITE_HASURA_ADMIN_SECRET
+    },
     body: JSON.stringify({
       query: operationsDoc,
       variables,
