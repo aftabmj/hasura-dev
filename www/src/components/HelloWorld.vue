@@ -12,7 +12,7 @@ interface MyData {
 }
 
 const mydata = ref<MyData | null>(null)
-const endpoint = import.meta.env.VITE_HASURA_PROJECT_ENDPOINT;
+const endpoint = import.meta.env.VITE_NEXT_PUBLIC_HASURA_PROJECT_ENDPOINT;
 
 function fetchGraphQL(
   operationsDoc: string,
