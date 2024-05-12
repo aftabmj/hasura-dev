@@ -1,0 +1,1 @@
+CREATE TABLE "public"."audit_issues_client_onlyin_assessment" ("id" serial NOT NULL, "audit_run_id" integer NOT NULL, PRIMARY KEY ("id") , FOREIGN KEY ("audit_run_id") REFERENCES "public"."audit_run"("id") ON UPDATE restrict ON DELETE restrict, UNIQUE ("id"));

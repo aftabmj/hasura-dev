@@ -1,0 +1,4 @@
+-- Could not auto-generate a down migration.
+-- Please write an appropriate down migration for the SQL below:
+-- alter table "public"."audit_issues_client_onlyin_assessment" add column "client_id" varchar
+--  not null;
