@@ -1,0 +1,3 @@
+table:
+  name: lk_audit_issue_type
+  schema: public

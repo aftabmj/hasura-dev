@@ -32,16 +32,14 @@ function fetchGraphQL(
   }).then(result => result.json());
 }
 
-const operation:string = `
-  query MyQuery {
+const operation:string = `query FriendsQuery {
     friend {
       name
     }
-  }
-`;
+  }`;
 
 function fetchMyQuery() {
-  return fetchGraphQL(operation, 'MyQuery', {})
+  return fetchGraphQL(operation, 'FriendsQuery', {})
 }
 
 fetchMyQuery()

@@ -1,0 +1,3 @@
+table:
+  name: audit_issues_client_onlyin_assessment
+  schema: public

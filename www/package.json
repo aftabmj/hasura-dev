@@ -1,18 +1,28 @@
 {
   "name": "www",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "codegen": "graphql-codegen -r dotenv/config --config codegen.ts dotenv_config_path=./.env.local"
   },
   "dependencies": {
+    "@apollo/client": "^3.10.3",
+    "@vue/apollo-composable": "^4.0.2",
+    "@vue/apollo-util": "^4.0.0-beta.6",
     "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "graphql": "^16.8.1",
+    "graphql-tag": "^2.12.6",
     "vue": "^3.4.21"
   },
   "devDependencies": {
+    "@graphql-codegen/client-preset": "4.2.5",
+    "@graphql-codegen/introspection": "4.0.3",
+    "@types/node": "^20.12.11",
     "@vitejs/plugin-vue": "^5.0.4",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",

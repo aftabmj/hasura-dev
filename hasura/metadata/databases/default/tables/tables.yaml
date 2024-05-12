@@ -1,4 +1,8 @@
+- "!include public_audit_issues_client_onlyin_assessment.yaml"
+- "!include public_audit_issues_client_onlyin_episode.yaml"
+- "!include public_audit_run.yaml"
 - "!include public_friend.yaml"
+- "!include public_lk_audit_issue_type.yaml"
 - "!include public_pizza.yaml"
 - "!include public_pizza_order.yaml"
 - "!include public_pizza_topping.yaml"
